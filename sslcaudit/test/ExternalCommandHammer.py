@@ -29,7 +29,7 @@ class ExternalCommandHammer(ConnectionHammer):
             res = call(cmd, stdout=devnull, stderr=devnull, close_fds=True)
             self.logger.debug('exit code %d', res)
         except OSError as ex:
-            print 'failed to call %s, exceptin %s' % (cmd, ex)
+            print('failed to call %s, exceptin %s' % (cmd, ex))
             raise ex
         finally:
             devnull.close()

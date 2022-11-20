@@ -46,7 +46,7 @@ class ClientAuditorServer(Thread):
             self.res_queue = Queue()
         else:
             self.res_queue = res_queue
-	self.file_bag = file_bag
+        self.file_bag = file_bag
 
         # create TCP server and make it use our method to handle the requests
         self.tcp_server = ThreadingTCPServer(self.listen_on)

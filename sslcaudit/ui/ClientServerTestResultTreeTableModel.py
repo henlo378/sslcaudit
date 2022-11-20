@@ -127,4 +127,4 @@ class ClientServerTestResultTreeTableModel(QtCore.QAbstractItemModel):
         '''
         This method is when the main window handles events from the controller (via bridge).
         '''
-        print '*** client done ***'
+        print('*** client done ***')

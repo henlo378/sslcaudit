@@ -4,7 +4,13 @@
 # Copyright (C) 2012 Alexandre Bezroutchko abb@gremwell.com
 # ----------------------------------------------------------------------
 
-from distutils.core import setup
+import sys
+
+# "distutils" goes away in Python 3.12. Import through "distutils" if Python version is less than 3.10 and through "setuptools" if Python 3.10 (or newer) is used (to avoid deprecation warning).
+if ((sys.version_info.major == 3) and (sys.version_info.minor >= 10)):
+    from setuptools import setup
+else:
+    from distutils.core import setup
 
 setup(
     name='sslcaudit',

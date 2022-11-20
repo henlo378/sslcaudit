@@ -18,8 +18,10 @@ user-guide is available at doc/sslcaudit-user-guide-1.0.pdf.
 
 Sslcaudit uses M2Crypto Python library. On Debian system M2Crypto library can be
 installed with the following command:
-
+	Python 2.x:
 	$ sudo apt-get install python-m2crypto
+	Python 3.x:
+	$ sudo apt-get install python3-m2crypto
 
 MORE INFORMATION
 

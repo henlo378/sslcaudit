@@ -58,7 +58,7 @@ class ConnectedGotRequest(Connected):
         self.req = req
         self.dt = dt
 
-	self.req_file = file_bag.store(self.req)
+        self.req_file = file_bag.store(self.req)
 
     def __eq__(self, other):
         if self.__class__ != other.__class__: return False
